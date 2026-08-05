@@ -1,16 +1,27 @@
 :root {
-  --ink: #17211d;
-  --muted: #5b665f;
-  --paper: #f6f7f4;
-  --surface: #ffffff;
-  --surface-strong: #eef3ef;
-  --line: #d9dfd7;
-  --green: #1f4d3a;
-  --green-dark: #153328;
-  --blue: #315f7c;
-  --brick: #9d5147;
-  --gold: #b7822f;
-  --shadow: 0 24px 60px rgba(23, 33, 29, 0.13);
+  --deep-navy: #18324A;
+  --slate-blue: #3E6C8F;
+  --teal: #2E7D7A;
+  --burgundy: #8A3B3B;
+  --forest-green: #3F6B53;
+  --mustard: #C79A1B;
+  --soft-cream: #FFFFFF;
+  --charcoal: #222222;
+  --light-rule: #D6D6D6;
+  --light-gray: #F2F2F2;
+
+  --ink: var(--charcoal);
+  --muted: #5f6266;
+  --paper: var(--soft-cream);
+  --surface: var(--soft-cream);
+  --surface-strong: var(--light-gray);
+  --line: var(--light-rule);
+  --green: var(--forest-green);
+  --green-dark: var(--deep-navy);
+  --blue: var(--slate-blue);
+  --brick: var(--burgundy);
+  --gold: var(--mustard);
+  --shadow: 0 24px 60px rgba(24, 50, 74, 0.13);
   --radius: 8px;
   --max-width: 1120px;
 }
@@ -72,8 +83,8 @@ a:hover {
   justify-content: space-between;
   gap: 1.25rem;
   padding: 0.85rem max(1.25rem, calc((100vw - var(--max-width)) / 2));
-  background: rgba(246, 247, 244, 0.92);
-  border-bottom: 1px solid rgba(217, 223, 215, 0.82);
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid rgba(214, 214, 214, 0.82);
   backdrop-filter: blur(18px);
 }
 
@@ -138,8 +149,8 @@ a:hover {
 .hero-overlay {
   z-index: -1;
   background:
-    linear-gradient(90deg, rgba(246, 247, 244, 0.96) 0%, rgba(246, 247, 244, 0.86) 39%, rgba(246, 247, 244, 0.2) 72%),
-    linear-gradient(180deg, rgba(23, 33, 29, 0.02) 0%, rgba(23, 33, 29, 0.18) 100%);
+    linear-gradient(90deg, rgba(255, 255, 255, 0.97) 0%, rgba(255, 255, 255, 0.88) 39%, rgba(255, 255, 255, 0.24) 72%),
+    linear-gradient(180deg, rgba(24, 50, 74, 0.02) 0%, rgba(24, 50, 74, 0.2) 100%);
 }
 
 .hero-inner {
@@ -199,7 +210,7 @@ h3 {
 
 .lede {
   max-width: 620px;
-  color: #2f3a35;
+  color: var(--deep-navy);
   font-size: 1.28rem;
   line-height: 1.5;
 }
@@ -227,7 +238,7 @@ h3 {
 .button-primary {
   background: var(--green);
   color: white;
-  box-shadow: 0 14px 30px rgba(31, 77, 58, 0.22);
+  box-shadow: 0 14px 30px rgba(63, 107, 83, 0.22);
 }
 
 .button-primary:hover {
@@ -237,7 +248,7 @@ h3 {
 
 .button-secondary {
   background: rgba(255, 255, 255, 0.78);
-  border-color: rgba(23, 33, 29, 0.18);
+  border-color: rgba(24, 50, 74, 0.2);
   color: var(--ink);
 }
 
@@ -261,7 +272,7 @@ h3 {
 
 .profile-panel div {
   padding-bottom: 0.85rem;
-  border-bottom: 1px solid rgba(23, 33, 29, 0.11);
+  border-bottom: 1px solid rgba(24, 50, 74, 0.11);
 }
 
 .profile-panel div:last-child {
@@ -325,7 +336,7 @@ h3 {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
-  box-shadow: 0 16px 38px rgba(23, 33, 29, 0.07);
+  box-shadow: 0 16px 38px rgba(24, 50, 74, 0.07);
 }
 
 .research-item {
@@ -333,7 +344,7 @@ h3 {
 }
 
 .featured-paper {
-  border-top: 4px solid var(--green);
+  border-top: 4px solid var(--teal);
 }
 
 .paper-meta {
@@ -351,7 +362,7 @@ h3 {
 }
 
 .paper-links a {
-  color: var(--green);
+  color: var(--teal);
 }
 
 .stacked-list {
@@ -464,8 +475,8 @@ code {
 
   .hero-overlay {
     background:
-      linear-gradient(90deg, rgba(246, 247, 244, 0.96) 0%, rgba(246, 247, 244, 0.82) 68%, rgba(246, 247, 244, 0.55) 100%),
-      linear-gradient(180deg, rgba(23, 33, 29, 0.02) 0%, rgba(23, 33, 29, 0.18) 100%);
+      linear-gradient(90deg, rgba(255, 255, 255, 0.97) 0%, rgba(255, 255, 255, 0.84) 68%, rgba(255, 255, 255, 0.58) 100%),
+      linear-gradient(180deg, rgba(24, 50, 74, 0.02) 0%, rgba(24, 50, 74, 0.2) 100%);
   }
 
   h1 {
