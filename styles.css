@@ -117,23 +117,13 @@ a:hover {
   top: 1.5rem;
 }
 
-.portrait-placeholder {
-  display: grid;
+.portrait-photo {
+  display: block;
   width: 180px;
   aspect-ratio: 1;
-  place-items: center;
   margin-bottom: 1.4rem;
   border: 1px solid var(--rule);
-  background:
-    linear-gradient(135deg, rgba(24, 50, 74, 0.96), rgba(46, 125, 122, 0.9)),
-    var(--deep-navy);
-  color: white;
-}
-
-.portrait-placeholder span {
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 3rem;
-  font-weight: 800;
+  object-fit: cover;
 }
 
 h1,
@@ -383,14 +373,10 @@ h1 {
     column-gap: 1.2rem;
   }
 
-  .portrait-placeholder {
+  .portrait-photo {
     width: 120px;
     grid-row: span 3;
     margin-bottom: 0;
-  }
-
-  .portrait-placeholder span {
-    font-size: 2.1rem;
   }
 
   .contact-block,
@@ -412,7 +398,7 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .portrait-placeholder {
+  .portrait-photo {
     width: 132px;
     margin-bottom: 1.1rem;
   }
