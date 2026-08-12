@@ -318,14 +318,25 @@ h1 {
   font-weight: 700;
 }
 
-.paper-links span::before {
+.paper-links span::before,
+.paper-links a::before {
   color: var(--mustard);
   content: "[";
 }
 
-.paper-links span::after {
+.paper-links span::after,
+.paper-links a::after {
   color: var(--mustard);
   content: "]";
+}
+
+.paper-links a {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+.paper-links a:hover {
+  color: var(--burgundy);
 }
 
 .simple-list {
